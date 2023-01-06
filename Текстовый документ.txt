@@ -1,0 +1,8 @@
+
+imgBG = pygame.image.load('images/background.png')
+imgBird = pygame.image.load('images/bird.png')
+
+rect = imgBG.get_rect(center = (WIDTH // 2, HEIGHT // 2))
+    window.blit(imgBG, rect)
+    frame = (frame + 0.1) % 4
+    window.blit(imgBird, (100, 300), (34 * int(frame), 0, 34, 24))
